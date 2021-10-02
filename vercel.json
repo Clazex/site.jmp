@@ -1,4 +1,32 @@
 {
 	"cleanUrls": true,
-	"trailingSlash": false
+	"trailingSlash": false,
+	"redirects": [
+		{
+			"source": "/",
+			"destination": "https://github.com/Clazex",
+			"permanent": false
+		}
+	],
+	"rewrites": [
+		{
+			"source": "/hk-mod/:id",
+			"destination": "/api/hk-mod"
+		},
+		{
+			"source": "/hk-mod/:id/:version",
+			"destination": "/api/hk-mod"
+		}
+	],
+	"headers": [
+		{
+			"source": "/(.*)",
+			"headers": [
+				{
+					"key": "Cache-Control",
+					"value": "s-max-age=300, stale-while-revalidate"
+				}
+			]
+		}
+	]
 }
