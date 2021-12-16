@@ -2,7 +2,8 @@ import { VercelRequest, VercelResponse } from "@vercel/node";
 import got from "got";
 
 const modMap : Record<string, string> = {
-	"god-seeker-plus": "GodSeekerPlus"
+	"god-seeker-plus": "GodSeekerPlus",
+	"companion-cloth": "CompanionCloth"
 };
 
 export default async function (req: VercelRequest, res: VercelResponse) {
