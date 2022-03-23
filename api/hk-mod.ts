@@ -4,7 +4,8 @@ import got from "got";
 const modMap : Record<string, string> = {
 	"god-seeker-plus": "GodSeekerPlus",
 	"companion-cloth": "CompanionCloth",
-	"health-share": "HealthShare"
+	"health-share": "HealthShare",
+	"everwatchers": "Everwatchers"
 };
 
 export default async function (req: VercelRequest, res: VercelResponse) {
