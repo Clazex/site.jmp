@@ -7,7 +7,8 @@ const modMap : Record<string, string> = {
 	"health-share": "HealthShare",
 	"everwatchers": "Everwatchers",
 	"tribe-of-battle": "TribeOfBattle",
-	"crystalblobbles": "Crystalblobbles"
+	"crystalblobbles": "Crystalblobbles",
+	"continue-countdown": "ContinueCountdown"
 };
 
 export default async function (req: VercelRequest, res: VercelResponse) {
